@@ -95,8 +95,8 @@ class CaloriesCalculator(Calculator):
     """
 
     def get_calories_remained(self):
-        """This function returns function returns the number of calories
-        the user eat today.
+        """This function returns the number of calories
+        the user can eat today.
         In case the user has reached or exceeded the calorie limit for today,
         will be returned the corresponding message.
         """
