@@ -10,7 +10,7 @@ class Calculator:
     """Parent class with general functionality for money and calorie tracker.
     """
 
-    def __init__(self, limit):
+    def __init__(self, limit: float) -> None:
         self.limit = limit
         self.records = []
         self.today = dt.date.today()
@@ -50,7 +50,7 @@ class Record:
     """Parent class with general functionality for money and calorie tracker.
     """
 
-    def __init__(self, amount, comment, date=None):
+    def __init__(self, amount: float, comment: str, date=None) -> None:
         self.amount = amount
         self.comment = comment
         if date is None:
@@ -67,7 +67,7 @@ class CashCalculator(Calculator):
     EURO_RATE = 70.0
     RUB_RATE = 1
 
-    def get_today_cash_remained(self, currency):
+    def get_today_cash_remained(self, currency: str) -> str:
         """This function returns the amount of money left in rubles, euros or dollars.
         In case there is no money, if the currency is not supported by the
         tracker or there is a debt - returns the corresponding message.
