@@ -1,4 +1,4 @@
-# hw_python_oop
+# python_calculator
 ### Description
 Sprint 2. Final progect. These are two trackers: for counting money and calories.
 Trackers can count calories / money spent today as well as for the whole week.
